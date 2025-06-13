@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <div class="blob-container">
+    <div class="blob"></div>
+    <div class="blob"></div>
+    <div class="blob"></div>
+</div>
+<div class="floating-background">
+  <div class="circle circle1"></div>
+  <div class="circle circle2"></div>
+  <div class="circle circle3"></div>
+</div>
+
+    <div class="container">
+        <div class="app-wrapper">
+            <header>
+                <h1>To-Do <span class="calendar-icon">📅</span></h1>
+                <div class="date-display"></div>
+                <button id="theme-toggle" aria-label="Toggle Theme">🌓</button>
+            </header>
+
+            <div class="add-task">
+                <input type="text" id="new-task-input" placeholder="Add a new task...">
+                <button id="add-task-button">+</button>
+            </div>
+
+            <div class="filters">
+                <button class="filter-button active" data-filter="all">All</button>
+                <button class="filter-button" data-filter="active">Active</button>
+                <button class="filter-button" data-filter="completed">Completed</button>
+            </div>
+
+            <ul id="task-list">
+                <!-- Tasks will be dynamically added here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
